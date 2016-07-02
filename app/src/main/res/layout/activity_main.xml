@@ -18,22 +18,38 @@
             android:layout_height="wrap_content"
             android:orientation="vertical">
 
-            <EditText
+            <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:id="@+id/editText_search"/>
+                android:layout_weight="2"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/editText_search"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+
+                <Button
+                    android:id="@+id/button_get"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Get" />
+            </LinearLayout>
+
+
+            <EditText
+                android:id="@+id/editText_bookNum"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="invisible" />
 
             <TextView
                 android:id="@+id/textView_content"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Get Content" />
-
-            <Button
-                android:id="@+id/button_get"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Get" />
 
 
         </LinearLayout>
