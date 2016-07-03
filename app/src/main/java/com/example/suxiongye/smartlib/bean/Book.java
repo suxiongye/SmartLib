@@ -15,7 +15,7 @@ public class Book {
 
     @Override
     public String toString() {
-        return name+"\t"+author+"\n";
+        return name+"\t"+author+"\t"+id+"\t"+time+"\t"+num_all+"\t"+num_brought+"\n";
     }
 
     public String getName() {
